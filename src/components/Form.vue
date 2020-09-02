@@ -336,12 +336,6 @@ export default {
     }
   },
   methods: {
-    touch (field) {
-      return function (event) {
-        field.$model = event.target.value
-        field.$touch()
-      }
-    },
     submit () {
       this.$v.$touch()
       if (this.$v.$invalid) {
